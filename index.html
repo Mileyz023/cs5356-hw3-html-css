@@ -3,53 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dance Video Gallery</title>
+    <title>Personal Bio & Video Gallery</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Dance Portfolio!</h1>
+        <h1>Welcome to Dance Portfolio!</h1>
     </header>
 
     <main>
         <section class="bio">
             <div class="bio-container">
-                <img src="profile_img.jpg" alt="Profile Picture" class="profile-pic">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
                 <div class="bio-text">
                     <h2>About Me</h2>
                     <p>Hi! I'm Yu. I've been dancing since I was 4. 
                         Here’s a collection of videos of my recent dance covers.</p>
+
+                    <details>
+                        <summary>Click to learn more about me!</summary>
+                        <p>testest</p>
+                    </details>
                 </div>
             </div>
         </section>
 
-        <!-- Video Grid Section -->
         <section class="video-gallery">
             <article class="video">
                 <figure>
                     <video src="videos/video1.mp4" controls></video>
-                    <figcaption>KPOP Cover: Drip - Baby Monster</figcaption>
+                    <figcaption>Drip - Baby Monster</figcaption>
                 </figure>
             </article>
 
             <article class="video">
                 <figure>
                     <video src="videos/video2.mp4" controls></video>
-                    <figcaption>KPOP Cover: Get Loud - Kiss of Life</figcaption>
+                    <figcaption>Get Loud - Kiss of Life</figcaption>
                 </figure>
             </article>
 
             <article class="video">
                 <figure>
                     <video src="videos/video3.mp4" controls></video>
-                    <figcaption>KPOP Cover: Whiplash - Aespa</figcaption>
+                    <figcaption>Whiplash - Aespa</figcaption>
                 </figure>
             </article>
-
         </section>
     </main>
-
-    
 
     <script src="script.js"></script>
 </body>

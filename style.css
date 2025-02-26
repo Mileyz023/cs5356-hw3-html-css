@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #8a6154;
+    background-color: #5c463f;
     color: white;
     padding: 20px;
     font-size: 1.5em;
@@ -32,7 +32,7 @@ header {
 
 .profile-pic {
     width: 120px;
-    height: 120px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -73,6 +73,11 @@ figcaption {
     .video-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .bio-container {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -83,5 +88,9 @@ figcaption {
     .video-gallery {
         grid-template-columns: 1fr; /* Stacks videos in one column on smaller screens */
     }
-}
 
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+}
