@@ -22,6 +22,7 @@ header {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px) brightness(90%); /* new css property */
 }
 
 .bio-container {
@@ -70,6 +71,14 @@ figcaption {
     margin-top: 10px;
     color: #555;
 }
+
+#quote-section {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+}
+
 
 @media (max-width: 1024px) {
     .video-gallery {
