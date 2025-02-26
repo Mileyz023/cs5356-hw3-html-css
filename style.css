@@ -14,6 +14,8 @@ header {
 }
 
 .bio {
+    display: flex;
+    flex-wrap: wrap;
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -31,7 +33,7 @@ header {
 }
 
 .profile-pic {
-    width: 120px;
+    width: 180px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
