@@ -3,21 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Page</title>
+    <title>Dance Video Gallery</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Welcome to My Page</h1>
-        </header>
-        <section class="profile">
-            <img src="profile_img.jpg" alt="My Avatar">
-            <h2>Hi, I'm Yu!</h2>
-            <p>I’m passionate about web development and enjoy building interactive and visually appealing websites. I love experimenting with new front-end technologies!</p>
-            <button id="changeTheme">Change Theme</button>
+    <header>
+        <h1>Welcome to My Dance Portfolio</h1>
+    </header>
+
+    <main>
+        <section class="bio">
+            <h2>About Me</h2>
+            <p>Hi! I'm Yu. I've been dancing since I was 4. 
+               Here’s a collection of videos of my recent dance covers.</p>
+            
+            <details>
+                <summary>Click to learn more about me!</summary>
+                <p>testtest</p>
+            </details>
         </section>
-    </div>
+
+        <!-- Video Grid Section -->
+        <section class="video-gallery">
+            <article class="video">
+                <figure>
+                    <video src="videos/video1.mp4" controls></video>
+                    <figcaption>KPOP Cover: Drip - Baby Monster</figcaption>
+                </figure>
+            </article>
+
+            <article class="video">
+                <figure>
+                    <video src="videos/video2.mp4" controls></video>
+                    <figcaption>KPOP Cover: Get Loud - Kiss of Life</figcaption>
+                </figure>
+            </article>
+
+            <article class="video">
+                <figure>
+                    <video src="videos/video3.mp4" controls></video>
+                    <figcaption>KPOP Cover: Whiplash - Aespa</figcaption>
+                </figure>
+            </article>
+
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>

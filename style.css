@@ -6,12 +6,6 @@ body {
     text-align: center;
 }
 
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
 header {
     background-color: #007BFF;
     color: white;
@@ -19,76 +13,56 @@ header {
     font-size: 1.5em;
 }
 
-/* Profile Section with Flexbox */
-.profile {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px;
+.bio {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 800px;
 }
 
-.profile img {
-    width: 150px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-.bio {
-    max-width: 400px;
-    text-align: left;
+.video {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+video {
+    width: 100%;
+    border-radius: 10px;
+    filter: grayscale(30%) contrast(1.1);
+}
+
+figcaption {
+    font-size: 0.9em;
     margin-top: 10px;
-    font-size: 1em;
+    color: #555;
 }
 
-button:hover {
-    background-color: #0056b3;
+@media (max-width: 1024px) {
+    .video-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-
 
 @media (max-width: 768px) {
-    .profile {
-        flex-direction: column;
-        text-align: center;
-    }
-
     .bio {
-        text-align: center;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        font-size: 1.2em;
         padding: 15px;
     }
 
-    .profile {
-        padding: 20px;
-    }
-
-    .profile img {
-        width: 120px;
-        height: 120px;
-    }
-
-    button {
-        width: 100%;
+    .video-gallery {
+        grid-template-columns: 1fr; /* Stacks videos in one column on smaller screens */
     }
 }
+
