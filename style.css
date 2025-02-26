@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #007BFF;
+    background-color: #8a6154;
     color: white;
     padding: 20px;
     font-size: 1.5em;
@@ -20,6 +20,25 @@ header {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bio-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bio-text {
+    max-width: 500px;
 }
 
 .video-gallery {
